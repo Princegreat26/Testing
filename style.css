@@ -1,0 +1,201 @@
+@import url("/css/nav.css");
+@import url("/css/dashboard.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* stylings */
+:root {
+  /* Color Scheme */
+  --background-color: #22202c; /* Dark background */
+  --Nav-color: #1a1a27; /* Dark background */
+  --primary-text-color: #ffffff; /* White text */
+  --secondary-text-color: #a1a1a1; /* Light gray text for less emphasis */
+  --accent-color: #0037ff; /* Blue accent for elements like buttons or icons */
+  --negative-change-color: #ff3b30; /* Red for negative values or errors */
+  --positive-change-color: #4cd964; /* Green for positive values or confirmations */
+  --card-background-color: #1e1e1e; /* Slightly lighter shade for card backgrounds */
+  --border-color: #333333; /* Borders and dividers */
+
+  /* Padding and Spacing */
+  --default-padding: 1rem; /* Default padding around containers */
+  --card-padding: 0.75rem; /* Padding within cards */
+  --layout-margin: 2rem; /* Spacing between layout components */
+}
+
+body.light-mode {
+  /* Color Scheme - Light Mode */
+  --background-color: #f4f4f9; /* Light background */
+  --Nav-color: #ffffff; /* White nav background */
+  --primary-text-color: #000000; /* Black text */
+  --secondary-text-color: #555555; /* Dark gray text for less emphasis */
+  --accent-color: #0077cc; /* Blue accent for elements like buttons or icons */
+  --negative-change-color: #d9534f; /* Softer red for negative values or errors */
+  --positive-change-color: #5cb85c; /* Softer green for positive values or confirmations */
+  --card-background-color: #ffffff; /* White card background */
+  --border-color: #dddddd; /* Light gray borders and dividers */
+}
+/* universal
+.card {
+  background-color: var(--Nav-color);
+ padding: 1.5rem 1rem;
+  width: 30%;
+
+  border-radius: 10px;
+  color: var(--primary-text-color);
+} */
+
+.search-btn {
+  display: none !important;
+}
+#user-name {
+  font-size: 0.5rem;
+}
+.chart-live {
+  width: 300px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  /* background: red; */
+  width: 90dvw;
+  padding: 0.5rem 0 !important;
+  margin-bottom: 1.3rem;
+}
+/* Example for a button with accent color */
+html,
+body {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+  font-family: Montserrat;
+}
+.flex-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 90dvh;
+}
+#login {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  outline: none;
+  border: none;
+  margin-top: 3rem;
+  width: 99%;
+  font-weight: 800;
+  padding: 1rem 0;
+  margin-bottom: 0.6rem;
+}
+.small {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.btc {
+display: flex;
+height: 100dvh;
+/* background: red; */
+justify-content: center;
+align-items: center;
+}
+.small a {
+  text-decoration: underline;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+  height: 100dvh;
+}
+
+.hidden {
+  display: none;
+}
+
+.dashboard-flex {
+  display: flex;
+}
+.none1 {
+  display: none !important;
+}
+#user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background-image: url("user.png"); */
+  background-size: cover;
+  margin-right: 1rem;
+}
+/* content */
+.content {
+  padding: 0.5rem 2rem 2rem !important;
+  width: 100%;
+  overflow-y: scroll;
+  cursor: pointer;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.search-btn,
+.user {
+  display: flex;
+  align-items: center;
+}
+/* flex box */
+.flex {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.gap2 {
+  /* background: red ; */
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+}
+/* grid flex */
+.grid-flex {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  width: 100%;
+  height: 55dvh;
+}
+.one .two {
+  background: rgb(236, 22, 111);
+}
+.atmcard {
+  margin-bottom: 2rem;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.chart {
+  margin-bottom: 2rem;
+}
+
+.headline-widget {
+  height: 150px !important;
+  width: 300px;
+  margin-top: 2rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.live-market {
+  margin-top: 10px;
+
+  height: 900px;
+  border-radius: 10px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/studybuddy-favicon-color.png"
+      type="image/x-icon"
+    />
+    <!-- Remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>CryptoBoss || By TagTecnologiesNg</title>
+  </head>
+  <body>
+    <main>
+      <!-- The screen we see once we are not logged in -->
+      <section id="logged_out_view">
+        <div class="item">
+          <div class="flex-btn">
+            <div class="btc">
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+              <dotlottie-player src="https://lottie.host/78035296-091f-478e-9705-8ff39ab68a76/1jwmxVipiq.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+          
+            </div>
+ <div class="small">
+            
+  <button id="login" type="button">Log In</button>
+  <span>
+    Don't have an account?
+    <a type="button" id="register">Sign up</a>
+  </span>
+ </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The screen we see once we are logged in -->
+      <section id="logged_in_view" class="hidden" >
+       
+      <div class="dashboard">
+        <div class="dashboard-flex">
+          <div class="nav" id="nav">
+            <div class="logo">Logo</div>
+            <div class="column ">
+              <div class="nav-flex">
+         <div class="nav-1">
+          <div class="nav-item">
+            <a href="#"><i class="ri-home-4-line"></i> Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="#"><i class="ri-pie-chart-2-line"></i> Charts</a>
+          </div>
+          <div class="nav-item">
+            <a href="#"
+              ><i class="ri-money-dollar-circle-line"></i> Transactions</a
+            >
+          </div>
+          <div class="nav-item">
+            <a href="#"><i class="ri-wallet-3-line"></i> Wallet</a>
+          </div>
+          <div class="nav-item">
+            <a href="#"><i class="ri-bank-card-fill"></i> Deposit</a>
+          </div>
+          <div class="nav-item">
+            <a href="#"><i class="ri-currency-fill"></i>Withdraw</a>
+          </div>
+         </div>
+      <div class="bottom">
+        <div class="nav-item">
+          <a href="#"><i class="ri-settings-3-line"></i> Settings</a>
+        </div>
+        <div class="nav-item">
+          <a id="logout" type="button"><i class="ri-logout-box-r-line"></i> Log out</a>
+          <!-- <button id="logout" type="button">Log out</button> -->
+        </div>
+      </div>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="content">
+            <!-- top search bar -->
+            <div class="top">
+              <div class="burger" id="burger">
+                <i class="ri-menu-line"></i>
+                <i class="ri-close-circle-fill"></i>
+              </div>
+              <h1>Dashboard</h1>
+              <div class="search-btn">searchbtn</div>
+              <div class="top-2">
+                <div class="notification"></div>
+                <div class="user">
+                  <img
+                    id="user-img"
+                    src="./img/pngwing.com(20).png"
+                    alt="User Image"
+                  />
+                  <span id="user-name"></span>
+                  <p class="none1">Your email: <span id="user-email"></span></p>
+                </div>
+              </div>
+            </div>
+            <!-- the card flex -->
+            <div class="card-flex">
+              <div class="flex gap2">
+                <div class="card">
+                  <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+                  <gecko-coin-price-chart-widget locale="en" dark-mode="true" outlined="true" coin-id="ethereum" initial-currency="usd" width="300" height="50"></gecko-coin-price-chart-widget>
+                </div>
+                <div class="card ">
+                  <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+                  <gecko-coin-price-chart-widget locale="en" dark-mode="true" outlined="true" coin-id="bitcoin" initial-currency="usd" width="300" height="50"></gecko-coin-price-chart-widget>
+                </div>
+                <div class="card">
+                  <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+                  <gecko-coin-price-chart-widget locale="en" dark-mode="true" outlined="true" coin-id="solana" initial-currency="usd" width="300" height="50"></gecko-coin-price-chart-widget>
+                </div>
+                <div class="card">
+                  <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+<gecko-coin-price-chart-widget locale="en" dark-mode="true" outlined="true" coin-id="dogs-2" initial-currency="usd" width="300" height="50"></gecko-coin-price-chart-widget>
+                </div>
+              </div>
+              <!-- virtual card and charts -->
+              <div class="grid-flex">
+                <div class="one">
+                  <div class="atmcard">
+                    <script src="https://widgets.coingecko.com/gecko-coin-converter-widget.js"></script>
+<gecko-coin-converter-widget locale="en" dark-mode="true" transparent-background="true" outlined="true" initial-currency="usd" width="300"></gecko-coin-converter-widget>
+                  </div>
+                  <div class="chart">
+                    <script src="https://widgets.coingecko.com/gecko-coin-ticker-widget.js"></script>
+<gecko-coin-ticker-widget locale="en" dark-mode="true" outlined="true" initial-currency="usd" width="300"></gecko-coin-ticker-widget>
+                  </div>
+                  <div class="headline-widget">
+                    <script src="https://widgets.coingecko.com/gecko-coin-price-static-headline-widget.js"></script>
+<gecko-coin-price-static-headline-widget locale="en" dark-mode="true" outlined="true" coin-ids="sun-token,spx6900,sui,optimism,baby-doge-coin,bittensor,neiro-3,kamino,solana" initial-currency="usd"></gecko-coin-price-static-headline-widget>
+                  </div>
+                </div>
+                <div class="two">
+
+                  <div class="chart-live">
+                    <script src="https://widgets.coingecko.com/gecko-coin-compare-chart-widget.js"></script>
+<gecko-coin-compare-chart-widget locale="en" dark-mode="true" outlined="true" coin-ids="sad-hamster,shiba-inu,dogecoin,dogs-2" initial-currency="usd" width="540"></gecko-coin-compare-chart-widget>
+                  </div>
+
+                  <div class="live-market">
+                    <script src="https://widgets.coingecko.com/gecko-coin-market-ticker-list-widget.js"></script>
+<gecko-coin-market-ticker-list-widget locale="en" dark-mode="true" outlined="true" initial-currency="usd"></gecko-coin-market-ticker-list-widget>
+                  </div>
+              
+          
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+  </section>
+
+    <!-- 
+    <script
+      type="module"
+      src="./@kinde-oss/kinde-auth-pkce-js/dist/kinde-auth-pkce-js.esm.js"
+    ></script> -->
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/nav.js"></script>
+    <!-- <script type="module" src="./js/blockchain.js"></script> -->
+    <!-- <script type="module" src="./js/chart.js"></script> -->
+  </body>
+</html>
