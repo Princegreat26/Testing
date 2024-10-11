@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/style.css " />
     <link
       rel="shortcut icon"
       href="./img/studybuddy-favicon-color.png"
@@ -21,7 +21,7 @@
   <body>
     <main>
       <!-- The screen we see once we are not logged in -->
-      <section id="logged_out_view">
+      <!-- <section id="logged_out_view">
         <div class="item">
           <div class="flex-btn">
             <div class="btc">
@@ -40,15 +40,15 @@
  </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- The screen we see once we are logged in -->
-      <section id="logged_in_view" class="hidden" >
+
        
       <div class="dashboard">
         <div class="dashboard-flex">
           <div class="nav" id="nav">
-            <div class="logo">Logo</div>
+            <div class="logo">Paul Great</div>
             <div class="column ">
               <div class="nav-flex">
          <div class="nav-1">
@@ -56,21 +56,24 @@
             <a href="#"><i class="ri-home-4-line"></i> Home</a>
           </div>
           <div class="nav-item">
-            <a href="#"><i class="ri-pie-chart-2-line"></i> Charts</a>
+            <a href="#"><i class="ri-user-line"></i> Profile</a>
           </div>
           <div class="nav-item">
             <a href="#"
-              ><i class="ri-money-dollar-circle-line"></i> Transactions</a
+              ><i class="ri-money-dollar-circle-line"></i> Transactions </a
             >
           </div>
           <div class="nav-item">
-            <a href="#"><i class="ri-wallet-3-line"></i> Wallet</a>
+            <a href="#"><i class="ri-file-user-fill"></i></i>CreateAccount</a>
           </div>
           <div class="nav-item">
             <a href="#"><i class="ri-bank-card-fill"></i> Deposit</a>
           </div>
           <div class="nav-item">
-            <a href="#"><i class="ri-currency-fill"></i>Withdraw</a>
+            <a href="#"><i class="ri-send-plane-fill"></i></i>BillPayments</a>
+          </div>
+          <div class="nav-item">
+            <a href="#"><i class="ri-currency-fill"></i>Airtime</a>
           </div>
          </div>
       <div class="bottom">
@@ -136,6 +139,10 @@
                     <script src="https://widgets.coingecko.com/gecko-coin-converter-widget.js"></script>
 <gecko-coin-converter-widget locale="en" dark-mode="true" transparent-background="true" outlined="true" initial-currency="usd" width="300"></gecko-coin-converter-widget>
                   </div>
+                  <div class="chart-live">
+                    <script src="https://widgets.coingecko.com/gecko-coin-compare-chart-widget.js"></script>
+<gecko-coin-compare-chart-widget locale="en" dark-mode="true" outlined="true" coin-ids="sad-hamster,shiba-inu,dogecoin,dogs-2" initial-currency="usd" width="540"></gecko-coin-compare-chart-widget>
+                  </div>
                   <div class="chart">
                     <script src="https://widgets.coingecko.com/gecko-coin-ticker-widget.js"></script>
 <gecko-coin-ticker-widget locale="en" dark-mode="true" outlined="true" initial-currency="usd" width="300"></gecko-coin-ticker-widget>
@@ -144,19 +151,17 @@
                     <script src="https://widgets.coingecko.com/gecko-coin-price-static-headline-widget.js"></script>
 <gecko-coin-price-static-headline-widget locale="en" dark-mode="true" outlined="true" coin-ids="sun-token,spx6900,sui,optimism,baby-doge-coin,bittensor,neiro-3,kamino,solana" initial-currency="usd"></gecko-coin-price-static-headline-widget>
                   </div>
+                  
                 </div>
                 <div class="two">
-
-                  <div class="chart-live">
-                    <script src="https://widgets.coingecko.com/gecko-coin-compare-chart-widget.js"></script>
-<gecko-coin-compare-chart-widget locale="en" dark-mode="true" outlined="true" coin-ids="sad-hamster,shiba-inu,dogecoin,dogs-2" initial-currency="usd" width="540"></gecko-coin-compare-chart-widget>
-                  </div>
-
-                  <div class="live-market">
+          <div class="live-market">
                     <script src="https://widgets.coingecko.com/gecko-coin-market-ticker-list-widget.js"></script>
 <gecko-coin-market-ticker-list-widget locale="en" dark-mode="true" outlined="true" initial-currency="usd"></gecko-coin-market-ticker-list-widget>
                   </div>
               
+       
+
+        
           
 
                 </div>
@@ -168,16 +173,11 @@
     </main>
 
 
-  </section>
 
-    <!-- 
-    <script
-      type="module"
-      src="./@kinde-oss/kinde-auth-pkce-js/dist/kinde-auth-pkce-js.esm.js"
-    ></script> -->
+
+
     <script type="module" src="./index.js"></script>
-    <script type="module" src="./js/nav.js"></script>
-    <!-- <script type="module" src="./js/blockchain.js"></script> -->
-    <!-- <script type="module" src="./js/chart.js"></script> -->
+    <script type="module" src="./nav.js"></script>
+ 
   </body>
 </html>
